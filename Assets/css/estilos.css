@@ -1,0 +1,206 @@
+/*Esto es un comentario*/
+
+body {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    background-color: tomato;
+    opacity: 1;
+    border: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    background-color: rgba(10, 40, 10, 0.9);
+    background-color: black;
+}
+
+footer {
+    background-color: cyan;
+    color: black;
+    font-size: 1.5vh;
+    padding: 2vh;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    color: tomato;
+    font-size: 5vh;
+    margin: 0;
+    padding: 1vh;
+}
+
+h3 {
+    color: black;
+    font-size: 4vh;
+    padding: 1vh;
+    margin: 0;
+}
+
+p {
+    color: white;
+    font-size: 3vh;
+    padding: 1vh;
+}
+
+
+/*Selector de etiqueta*/
+
+li {
+    color: white;
+    font-size: 2vh;
+}
+
+a {
+    display: inline-block;
+    color: gold;
+    font-size: 3vh;
+    padding-left: 1vh;
+    text-decoration: none;
+}
+
+a:hover {
+    color: cyan;
+    cursor: pointer;
+    filter: blur(0.08em);
+}
+
+.video-responsive {
+    height: 88%;
+    overflow: hidden;
+    /* padding-bottom: 56.25%; */
+    padding-bottom: 30%;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+    height: 88%;
+    left: 0;
+    position: absolute;
+    top: 10;
+    width: 100%;
+}
+
+#estiloTitulo {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 10vh;
+    color: black;
+    text-align: center;
+    border: solid 1vh;
+    padding: 2vh;
+    margin: 0;
+    font-family: adobe-garamond-pro, serif;
+    font-style: normal;
+}
+
+#imagen {
+    height: 70vh;
+    width: 100%;
+    filter: blur(0.2em);
+}
+
+#mapa {
+    height: 88%;
+    width: 100%;
+}
+
+#nave ul {
+    background-color: black;
+    padding: 1vh;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+#nave li {
+    display: flex;
+    text-align: center;
+    margin: 0 1vh 0 0;
+    justify-content: space-around;
+}
+
+#nave li a {
+    color: tomato;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0 1vh 0 0;
+}
+
+#nave li a:hover {
+    cursor: pointer;
+    text-shadow: 0 0 5px #fff, 0 0 10px #6C193D, 0 0 20px #6C193D;
+    filter: blur(0);
+}
+
+.bloque {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: tomato;
+    opacity: 1;
+    border: solid 1vh;
+}
+
+.bloque li {
+    margin: 0;
+    padding: 3vh;
+    list-style-type: none;
+    display: inline;
+    color: black;
+}
+
+.bloque li:hover {
+    filter: blur(0.08em);
+}
+
+.gridd {
+    display: flex;
+    flex-direction: column;
+    background-color: tomato;
+    border: solid 1vh;
+}
+
+.gridd div {
+    height: 60vh;
+}
+
+@media (min-width: 700px) {
+    #nave ul {
+        display: flex;
+        background-color: black;
+        padding: 1vh;
+        margin: 0;
+        list-style-type: none;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        height: inherit;
+    }
+    #nave li {
+        display: inline-block;
+        text-align: center;
+        margin: 0 1vh 0 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .gridd {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2vh;
+    }
+    .gridd div {
+        height: 60vh;
+    }
+}
